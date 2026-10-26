@@ -1,0 +1,16 @@
+{
+  "name": "magic-hour-cloudflare-workflows",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev --ip 127.0.0.1 --port 18787",
+    "types": "wrangler types"
+  },
+  "devDependencies": {
+    "wrangler": "4.153.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "magic-hour-media",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-23",
+  "workers_dev": false,
+  "preview_urls": false,
+  "secrets": { "required": ["MAGIC_HOUR_API_KEY"] },
+  "workflows": [
+    {
+      "name": "magic-hour-media",
+      "binding": "MEDIA_WORKFLOW",
+      "class_name": "MagicHourMedia"
+    }
+  ]
+}
