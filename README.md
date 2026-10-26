@@ -1,6 +1,6 @@
 # Magic Hour media jobs in Cloudflare Workflows
 
-Generate one image or a five-second video, or resume an already accepted Magic Hour project. The workflow stores the project ID as a step result, polls its status with durable sleeps, and returns temporary download links. It uses native `fetch` and needs no MCP proxy, additional database, R2 bucket, or model-provider key.
+Generate one image or a five-second video, or resume an already accepted Magic Hour project. The workflow stores the project ID as a step result, polls its status with durable sleeps, and returns temporary download links. It uses native `fetch` and needs no MCP proxy, additional database, R2 bucket, or separate upstream model-provider key.
 
 This is a Magic Hour-maintained example, not an accepted Cloudflare template. Normal installation, stock Local Explorer, native GET-only existing-image recovery, and deliberate image/video creation passed with Wrangler 4.153.0. The image charged 5 credits and its usable 640 × 640 PNG was downloaded, fully decoded and visually reviewed. The five-second video charged 120 credits; its downloaded H.264 MP4 passed full decoding and a three-frame visual check. Automatic local restart recovery and cloud deployment are not verified.
 
